@@ -4,67 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/custom.css">
+    <title>Landing Page</title>
 </head>
 <body>
     <!-- NAVIGATION BAR -->
     <nav>
-       <p>beer</p>
+       <p class="logo", id="navbartitle">BEER</p>
        <ul>
            <li><a href="#benefitsection">Benefit</a></li>
            <li><a href="#pricingsection">Pricing</a></li>
-           <li><a href="#testimonialssection">testimonials</a></li>
+           <li><a href="#testimonialssection">Testimonials</a></li>
        </ul>
     </nav>
 
     <!-- HEADER -->
     <header>
-        <img src="./images/hero.jpg" alt="picture of beer selection">
         <div>
+            <img src="./images/heropicturecorrect.jpg" alt="picture of beer selection">
+        </div>
+        <div class="header-text"> 
             <h1>Subscribe today and get notified first when we launch Beer app!</h1>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+                <form>
+                    <input type="text" placeholder="Your email address">
+                    <button>Subscribe now</button>
+            </form>
         </div>
-        <form>
-            <input type="text" placeholder="Your email address">
-            <button>Subscribe now</button>
-        </form>
     </header>
+
 
       <!-- SECTION BENEFIT -->
         <section id="benefitsection">
             <article> 
-                <img src="./images/article1sectionbenefits.png" alt="picture of dort munder">
-                <div class="line"></div>
+                <div> 
+                    <img src="./images/article1sectionbenefits.png" alt="picture of dort munder">
+                </div>
                 <h4>Dort Munder</h4> 
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            </article>
-            <article>
-                <img src="./images/article2sectionbenefits.png" alt="picture of dark lager">
                 <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </article>
+
+            <article>
+                <div>
+                    <img src="./images/article2sectionbenefits.png" alt="picture of dark lager">
+                </div>  
                 <h4> Dark Lager</h4>
+                <div class="line"></div>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             </article>
+
             <article>
-                    <img src="./images/article3sectionbenefits.png" alt="picture of amber lager">
-                    <div class="line"> </div>
+                    <div> 
+                        <img src="./images/article3sectionbenefits.png" alt="picture of amber lager"> 
+                    </div>
                     <h4> Amber Lager</h4>
+                    <div class="line"> </div>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </article>
+                
+            </article>
         </section>
 
+
          <!-- SECTION PRICING -->
-        <section id="pricingsection">
+        <section id="pricingsection", class="row"> 
+            <img src="./images/pic1sectionpricing.png" alt="picture of a beer pint">
             <div> 
-                <h3>What Our Customers Say</h3>
+                <h2>It tastes like Premium.</h2>
+                <h3>Better than any Beer.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button>Subscribe now</button>
             </div>
-            <div>
-                 <div>
-                     <article>
-                            <img src="./images/pic2sectiontestimonials.png" alt="">
+        </section>
+
+
+          <!-- SECTION TESTIMONIALS -->
+        <section id="testimonialssection", class="customer-container">
+            <div class="left-column"> 
+                <h3>What Our <br> Customers Say</h3>
+            </div>
+            <div class="right-column">
+                 <div class="testimonial-container swipe-container">
+                     <article class="testimonial-column">
+                            <div>
+                                <img src="./images/pic2sectiontestimonials.png" alt="">
+                            </div>
                             <p> I love Beers!!tasty mmmmm…..</p>
                             <p> Marjon Siero / Ironhack</p>
                      </article>
-                    <article>
+                    <article class="testimonial-column">
                             <img src="./images/pic3sectiontestimonials.png" alt=""> 
                             <p> “If life gives you lemons, f*ck it, Squeeze it in your Beer”</p>
                             <p> Dina Korkmazova / Ironhack</p>
@@ -73,8 +101,9 @@
             </div>
         </section>
 
-         <!-- SECTION TESTIMONIALS -->
-        <section id="testimonialssection">
+
+            <!-- SECTION NO NAME -->
+        <section id="nonamesection" class="row">
             <h2> Subscribe today and get notified first!</h2>
             <h3>Product launch in: 12 days</h3>
             <form>
@@ -83,13 +112,14 @@
             </form>
         </section>
 
+
      <!-- FOOTER -->    
     <footer> 
         <p>© 2019 Beer All Right Reserved</p>
         <ul>
                 <li><a href="#benefitsection">Benefit</a></li>
                 <li><a href="#pricingsection">Pricing</a></li>
-                <li><a href="#testimonialssection">testimonials</a></li>
+                <li><a href="#testimonialssection">Testimonials</a></li>
         </ul>
     </footer>
 </body>
